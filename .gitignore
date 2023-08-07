@@ -2,3 +2,5 @@
 /lectures/.quarto/
 /lectures/tikz/
 /lectures/.ipynb_checkpoints/
+
+/.luarc.json
