@@ -167,6 +167,24 @@ Given any category $\mathsf{C}$, there is a functor $1_{\mathsf{C}} \colon \math
 - For $x,y \in \mathsf{C}_0$, $f \colon x \to y$, $1_{\mathsf{C}}(f) = f$
 
 We leave it to the reader to show that this preserves identities and compositions. This is really easy if you can just state what you have to prove, but it might be tricky to state what you have to prove! So that would be a good exercise.
+
+::: {.callout-note}
+# My solution
+
+Suppose that $x \in \mathsf{C}_0$. Then
+
+$$
+1_{\mathsf{C}}(1_x) = 1_{1_{\mathsf{C}}(x)} = 1_x.
+$$
+
+Moreover, if $x, y, z \in \mathsf{C}_0$, and $r \colon x \to y$ and $s \colon y \to z$, then
+
+$$
+1_{\mathsf{C}}(s \circ r) = 1_{\mathsf{C}}(s) \circ 1_{\mathsf{C}}(r) = s \circ r.
+$$
+
+:::
+
 :::
 
 In Julia, we represent this all with the following data structures.
